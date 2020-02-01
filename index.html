@@ -17,8 +17,7 @@
         }
 
         img {
-            width: calc(33% - 15px);
-            height: auto;
+            width: 100%;
             margin: 5px;
             border-radius: 10px;
         }
@@ -28,6 +27,17 @@
             margin: auto;
             display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        @media (min-width: 700px) {
+            img {
+                width: calc(33% - 15px);
+            }
+
+            .images {
+                flex-direction: row;
+            }
         }
 
         h1 {
